@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity Crisis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <section class="idc-hero">
+    <div class="container">
+      <h1>Understanding Identity Crisis in Senior High School</h1>
+      <p>Navigating the complexities of identity formation during adolescence can be a challenging yet crucial aspect of
+        personal growth. This page provides resources and insights to help students understand and cope with identity
+        crises in senior high school.</p>
+    </div>
+  </section>
+
+  <section class="idc-videos">
+    <div class="container">
+      <h2>Videos on Identity Crisis</h2>
+      <div class="videos-grid">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NjdnqXcNgSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Who Am I? Exploring Identity in High School</h3>
+          <p>This video delves into the concept of identity formation during adolescence, discussing the different factors that influence who we become and how to navigate the challenges of self-discovery.</p>
+        </div>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/if5YMnNKcNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Navigating the Maze: Understanding and Coping with Identity Crisis</h3>
+          <p>This video offers practical strategies for young people experiencing an identity crisis, including tips on self-reflection, seeking support, and embracing change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="idc-quote">
+    <div class="container">
+      <img src="https://famouspsychologists.net/wp-content/uploads/2013/10/Erik-Erikson-263x300.jpg"alt="Erik Erikson">
+      <blockquote>
+        <p>"In the social jungle of human existence, there is no feeling of being alive without a sense of identity."</p>
+        <footer>- Erik Erikson</footer>
+      </blockquote>
+    </div>
+  </section>
+
+
+  <section class="idc-info">
+    <div class="container">
+      <div class="info-content">
+        <h2>What is an Identity Crisis?</h2>
+        <p>An identity crisis is a period of uncertainty and exploration where individuals question who they are, what
+          their values are, and what their place in the world is. This is particularly common during adolescence, as
+          young people are transitioning to adulthood and facing important decisions about their future.</p>
+      </div>
+
+      <div class="info-content">
+        <h2>Signs and Symptoms</h2>
+        <div class="symptoms-grid">
+          <div class="symptom">
+            <i class="fas fa-question-circle"></i>
+            <h3>Questioning Beliefs</h3>
+            <p>Individuals may begin to question long-held beliefs and values, exploring alternative perspectives and
+              ideologies.</p>
+          </div>
+          <div class="symptom">
+            <i class="fas fa-user-friends"></i>
+            <h3>Experimenting with Roles</h3>
+            <p>Adolescents may try out different roles and identities, exploring various social groups, styles, and
+              behaviors to see what fits.</p>
+          </div>
+          <div class="symptom">
+            <i class="fas fa-brain"></i>
+            <h3>Overwhelmed by Choices</h3>
+            <p>The abundance of choices and possibilities regarding education, career, and relationships can feel
+              overwhelming, leading to anxiety and confusion.</p>
+          </div>
+          <div class="symptom">
+            <i class="fas fa-search"></i>
+            <h3>Increased Self-Consciousness</h3>
+            <p> heightened sensitivity to social pressures and expectations can lead to increased self-consciousness
+              and
+              concerns about fitting in.</p>
+          </div>
+          <div class="symptom">
+            <i class="fas fa-road"></i>
+            <h3>Uncertainty about the Future</h3>
+            <p>The uncertainty surrounding future paths and the pressure to make important decisions can contribute to
+              feelings of anxiety and insecurity.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="info-content">
+        <h2>Coping Strategies</h2>
+        <div class="strategies-grid">
+          <div class="strategy">
+            <img src="img/self-reflection.jpg" alt="Self-reflection">
+            <h3>Self-reflection</h3>
+            <p>Take time for introspection to explore your interests, values, and goals. Journaling, meditation, or
+              simply quiet contemplation can be helpful.</p>
+          </div>
+          <div class="strategy">
+            <img src="img/talk-to-someone.jpg" alt="Talk to someone">
+            <h3>Talk to someone you trust</h3>
+            <p>Share your feelings and concerns with a trusted friend, family member, teacher, or counselor. Talking it
+              out can provide support and perspective.</p>
+          </div>
+          <div class="strategy">
+            <img src="img/explore-interests.jpg" alt="Explore interests">
+            <h3>Explore different activities</h3>
+            <p>Engage in new activities and hobbies to discover your passions and talents. This can help you gain a
+              better sense of who you are and what you enjoy.</p>
+          </div>
+          <div class="strategy">
+            <img src="img/be-patient.png" alt="Be patient">
+            <h3>Be patient with yourself</h3>
+            <p>Remember that identity formation is a journey, not a destination. It takes time and exploration to
+              develop a strong sense of self.</p>
+          </div>
+          <div class="strategy">
+            <img src="img/seek-help.jpg" alt="Seek help">
+            <h3>Seek professional help if needed</h3>
+            <p>If you're feeling overwhelmed or struggling to cope, don't hesitate to seek professional help from a
+              therapist or counselor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

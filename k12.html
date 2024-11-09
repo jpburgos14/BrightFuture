@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-12 and Career Path</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        showMenu();
+      });
+  </script>
+
+  <section class="k12-hero">
+    <div class="container">
+      <h1>K-12 Tracks and Strands</h1>
+      <p>The K-12 curriculum offers diverse paths for students to explore their interests and prepare for future careers. This page provides information and guidance on navigating the K-12 system and choosing the right career path.</p>
+    </div>
+  </section>
+
+  <section class="k12-tracks">
+    <div class="container">
+      <h2>Academic Track</h2>
+      <p>This track is designed for students who plan to pursue higher education after senior high school. It offers four strands:</p>
+      <div class="tracks-grid">
+        <div class="track">
+          <img src="./img/abm.jpg" alt="ABM Strand">
+          <h3>ABM (Accountancy, Business and Management)</h3>
+          <p>This strand provides a foundation in business, finance, and management principles.</p>
+          <ul>
+            <li>Accountancy</li>
+            <li>Business Administration</li>
+            <li>Marketing</li>
+            <li>Economics</li>
+          </ul>
+          <button onclick="openModal('NbtnP5Wbwp8')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/humss.png" alt="HUMSS Strand">
+          <h3>HUMSS (Humanities and Social Sciences)</h3>
+          <p>This strand focuses on developing critical thinking and communication skills in the context of humanities and social sciences.</p>
+          <ul>
+            <li>Psychology</li>
+            <li>Sociology</li>
+            <li>Political Science</li>
+            <li>Literature</li>
+          </ul>
+          <button onclick="openModal('5-6EQnGGe0Q')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/stem.jpg" alt="STEM Strand">
+          <h3>STEM (Science, Technology, Engineering and Mathematics)</h3>
+          <p>This strand is designed for students with a strong aptitude for science and math who are interested in pursuing careers in these fields.</p>
+          <ul>
+            <li>Engineering</li>
+            <li>Computer Science</li>
+            <li>Medicine</li>
+            <li>Research</li>
+          </ul>
+          <button onclick="openModal('9vMun5XI89s')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/gas.png" alt="GAS Strand">
+          <h3>GAS (General Academic Strand)</h3>
+          <p>This strand offers flexibility for students who are still exploring their options and haven't decided on a specific career path.</p>
+          <ul>
+            <li>Variety of electives</li>
+            <li>Broad foundation for college</li>
+          </ul>
+          <button onclick="openModal('EZwJs0qUYFQ')">Learn More</button> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tvl-track">
+    <div class="container">
+      <h2>TVL (Technical-Vocational-Livelihood) Track</h2>
+      <p>This track equips students with job-ready skills for various industries. It offers different specializations, and students can earn National Certificates (NCs) that enhance their employability.</p>
+      <div class="tracks-grid"> 
+        <div class="track">
+          <img src="./img/he.jpg" alt="Home Economics Strand"> 
+          <h3>Home Economics</h3>
+          <p>Focuses on skills related to housekeeping, tailoring, caregiving, food and beverage services, bread and pastry, tourism, and handicrafts.</p>
+          <button onclick="openModal('6iOTpNsdh6Q')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/agri-fishery.jpg" alt="Agri-Fishery Arts Strand"> 
+          <h3>Agri-Fishery Arts</h3>
+          <p>Provides hands-on learning in agriculture and aquaculture, including food processing, rubber production, animal production, and landscape installation.</p>
+          <button onclick="openModal('OQPEEkCaHaE')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/ICT.jpg" alt="ICT Strand"> 
+          <h3>Information and Communications Technology (ICT)</h3>
+          <p>Prepares students for careers in IT with skills in computer systems, programming, web development, and animation.</p>
+          <button onclick="openModal('wmCENdujsDg')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/industrial.png" alt="Industrial Arts Strand"> 
+          <h3>Industrial Arts</h3>
+          <p>Equips students with skills in carpentry, automotive servicing, driving, electronics repair, electrical installation, welding, plumbing, and tile setting.</p>
+          <button onclick="openModal('2GhjbMmD56o')">Learn More</button> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="other-tracks">
+    <div class="container">
+      <h2>Other Tracks</h2>
+      <div class="tracks-grid">
+        <div class="track">
+          <img src="./img/ad.jpg" alt="Arts and Design Track"> 
+          <h3>Arts and Design Track</h3>
+          <p>This track is for students interested in pursuing creative careers in:</p>
+          <ul>
+            <li>Music</li>
+            <li>Theater</li>
+            <li>Visual Arts</li>
+            <li>Multimedia Arts</li>
+            <li>Dance</li>
+          </ul>
+          <p>Possible college courses:</p>
+          <ul>
+            <li>Fine Arts</li>
+            <li>Graphic Design</li>
+            <li>Architecture</li>
+            <li>Communication Arts</li>
+          </ul>
+          <button onclick="openModal('8Am2jbPKDNI')">Learn More</button> 
+        </div>
+        <div class="track">
+          <img src="./img/sports.jpg" alt="Sports Track"> 
+          <h3>Sports Track</h3>
+          <p>This track focuses on developing students' skills and knowledge in:</p>
+          <ul>
+            <li>Safety and First Aid</li>
+            <li>Human Movement</li>
+            <li>Fundamentals of Coaching</li>
+            <li>Sports Officiating</li>
+            <li>Activity Management</li>
+            <li>Fitness, Sports and Recreation Leadership</li>
+            <li>Psychosocial Aspects of Sports</li>
+            <li>Fitness Testing</li>
+            <li>Exercise Programming</li>
+          </ul>
+          <button onclick="openModal('wtOr6fpEkcA')">Learn More</button> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span> 
+      <iframe id="modalVideo" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </div>
+  </div>
+  
+  <script>
+    function openModal(videoId) {
+      document.getElementById('modalVideo').src = "https://www.youtube.com/embed/" + videoId; 
+      document.getElementById('myModal').style.display = 'block';
+    }
+  
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+      document.getElementById('modalVideo').src = ''; 
+    }
+  </script>
+
+</body>
+</html>

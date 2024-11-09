@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment Tools</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon"> 
+</head>
+<body>
+    <div id="navbar"></div> 
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+
+    <section class="sa-hero">
+        <div class="container">
+            <h1>Self-Assessment Tools</h1>
+            <p>Discover your strengths, interests, and values with our self-assessment resources. <br> These tools can help you gain valuable insights into your personality and aptitudes, guiding you towards a fulfilling career path.</p> 
+        </div>
+    </section>
+
+    <section class="idc-videos"> 
+        <div class="container">
+            <h2>Videos on Self-Assessment</h2> <div class="videos-grid">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9CuMioMQcxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Why Self-Assessment is Key to Career Success</h3>
+                    <p>This video explains the importance of self-assessment in choosing a career path that aligns with your personality, skills, and interests.</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zhpcgpqWc1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Top 5 Self-Assessment Tools for Career Exploration</h3> 
+                    <p>Explore different self-assessment tools and learn how to use them effectively to identify your strengths and weaknesses.</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/scgqCyxe1QY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Unlock Your Potential: Using Self-Assessment for Personal Growth</h3>
+                    <p>Discover how self-assessment can help you understand your values, motivations, and personality traits for personal and professional development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sa-assessment">
+        <div class="container">
+            <h2>Online Self-Assessment</h2>
+            <p>Take this online assessment to gain a deeper understanding of your personality, interests, and career preferences.</p>
+            <a href="https://www.truity.com/test/type-finder-careers" class="hero-btn" target="_blank" rel="noopener noreferrer">Take the Assessment</a> 
+        </div>
+    </section>
+</body>
+</html>

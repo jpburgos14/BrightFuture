@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the Future</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div id="navbar"></div>
+        <div class="text-box">
+            <h1>Welcome to your future</h1>
+            <p>A guide to your desired career pathway</p> 
+            <a href="k12.html" class="hero-btn">Click Here To Know More!</a>
+        </div>
+    </header>
+
+    <section class="obj">
+        <div class="container">
+            <h2>Our Objective</h2>
+            <p>We aim to provide comprehensive resources and guidance to help students navigate the challenges of identity development and career decision-making during their senior high school years.</p>
+            <div class="row">
+                <div class="obj-col">
+                    <i class="fas fa-bullseye"></i> 
+                    <h3>Mission</h3>
+                    <p>To empower students with self-awareness, knowledge, and skills to make informed choices about their future paths.</p> 
+                </div>
+                <div class="obj-col">
+                    <i class="fas fa-eye"></i> 
+                    <h3>Vision</h3>
+                    <p>To foster a supportive and inclusive environment where students can explore their identities and aspirations, leading to fulfilling and successful careers.</p> 
+                </div>
+                <div class="obj-col">
+                    <i class="fas fa-gem"></i> 
+                    <h3>Core Values</h3>
+                    <p>We value student-centeredness, inclusivity, collaboration, and innovation in our approach to guiding students towards their future goals.</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="iq">
+        <div class="container">
+            <img src="img/eleanor.png" alt="Eleanor Roosevelt"> 
+            <blockquote>
+                <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                <footer>- Eleanor Roosevelt</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
